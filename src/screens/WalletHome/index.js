@@ -176,8 +176,9 @@ class WalletHome extends Component {
             </Text>
             <BalanceRow
               currentBalance={
+                //Reset if currentBalance is undefined, or keep the value.
                 this.state.currentBalance ? this.state.currentBalance : 0
-              } //Reset if currentBalance is undefined, or keep the value.
+              }
               onTokenChangeIconPress={() =>
                 this.props.navigation.navigate('TokenPicker')
               }
