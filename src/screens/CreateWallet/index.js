@@ -116,7 +116,8 @@ class CreateWallet extends Component {
           }
 
           setTimeout(() => {
-            this.props.navigation.navigate('Wallet');
+            //this.props.navigation.navigate('Wallet');
+            this.props.navigation.navigate('WalletHome');
           });
         } else if (this.state.confirmationPinCode.length === 4) {
           this.setState(
