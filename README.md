@@ -10,7 +10,7 @@ Problem:
 1. After entered two pin code, it crushed by the prop `currentBalance` is marked as required in `BalanceRow`, but its value is `undefined`.
 
 2. When Change pin code, it wont return to home page if the code is corrent.
-eg. Enter 1234, ask for repeat the code. Then enter 1234(meanwhile it stores new code as 1234). However, on phone screen you only could keep typing as 123456789 or press return button.
+eg. Enter 1234, ask for repeat the code. Then enter 1234(meanwhile it stores new code as 1234). However, on phone screen user only could keep typing as 123456789 or press return button.
 
 
 3. cant add new coin
@@ -24,6 +24,8 @@ After fixed, we could log to the WalletHome page.
 
 2. In src/screens/CreateWallet/index.js:119
 There is not page called Wallet. Change it to WalletHome to fix.
+
+3. Somehow user add token new coin didnt store to redux store and cant show in home page.
 
 
 ## Local development
